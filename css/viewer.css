@@ -1,0 +1,90 @@
+.blue {
+	fill:#31A0DA;
+}
+
+.orange {
+	fill:#F15F40;
+}
+
+.grey {
+	fill:#999999;
+}
+
+p {
+	margin: 5px;
+}
+
+.callout {
+	cursor:alias;
+	pointer-events:all;
+}
+
+.callout:hover {
+	fill:#F15F40;
+}
+.brush .extent {
+	fill-opacity: .1;
+	stroke: #fff;
+	/*shape-rendering: crispEdges;*/
+}
+
+.fit {
+	width: 100%;
+	height: 100%;
+}
+
+
+g > *{
+	pointer-events:all;
+}
+
+.cad-object
+{
+	fill:lightgray;
+	fill-opacity:0.2;
+	pointer-events:all;
+}
+
+
+
+polyline, line {
+	fill:#FFFFFF;
+	fill-opacity:0;
+	pointer-events:all;
+}
+
+.cad-object:hover {
+	fill:#0000FF;
+	fill-opacity:0.5;
+	pointer-events:all;
+}
+
+.cad-object polyline:hover {
+	fill:#00FF00;
+	fill-opacity:0.5;
+	pointer-events:all;
+}
+
+.cad-object line:hover {
+	fill:#00FFFF;
+	fill-opacity:0.5;
+	pointer-events:all;
+}
+
+
+
+#dbId0, #dbId0 > * {
+	/* pointer-events:none; */
+
+	stroke-width : 200;
+
+	stroke:black;
+
+}
+
+.cadtext {
+	/* pointer-events:none; */
+	fill:red;
+	fill-opacity:1;
+	stroke-width : 1;
+}

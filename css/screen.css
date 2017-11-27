@@ -1,0 +1,276 @@
+html, body, h1 {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: 'HelveticaNeue Light', sans-serif;
+    font-weight: 300;
+    background: url('../img/background.jpg') center center no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+#layout {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#header {
+    height: 100px;
+    background: url('../img/background-header.png') top left no-repeat;
+    background-size: cover;
+}
+#header span.icon {
+    float: left;
+} 
+
+span.icon {
+    width: 25px;
+    height: 25px;
+    display: block;
+    padding: 10px;
+    text-align: right;
+    background: rgba(30,43,56,0.3);
+    cursor: pointer;
+}
+
+span.icon-default {
+    background: rgba(30,43,56,0.3) url('../img/icon01-25x25-orange.svg') center center no-repeat;
+    background-size: 25px 25px;
+    border-right: 5px solid rgba(255,255,255,0.1);
+}
+
+
+
+.spacer {
+    padding-top: 5000px; /* TEMPORARRY */
+}
+.levels {
+    position: absolute;
+    top: 100px;
+    width: 280px;
+    height: 100%;
+    display: inline-block;
+    padding: 10px;
+    overflow-y: visible;
+    overflow-x: hidden;
+    font-size: 9pt;/*16pt;*/
+}
+#level1 {
+    z-index: 6;
+    left: 0px;
+    background: url('../img/background-level1.jpg') center center no-repeat;
+    background-size: cover;
+}
+#level2 {
+    z-index: 4;
+    display: none;
+    left: 300px;
+    background: url('../img/background-level2.png') center center no-repeat;
+    background-size: cover;
+}
+#level3 {
+    z-index: 2;
+    display: none;
+    left: 600px;
+    background: url('../img/background-level3.jpg') center center no-repeat;
+    background-size: cover;
+}
+h1 {
+    display: table-cell;
+    width: 300px;
+    background: rgba(30,43,56,0.3);
+    font-size: 18pt;
+    font-weight: 200;
+    letter-spacing: 0.05em;
+    color: #999;
+    height: 80px;
+    vertical-align: middle;
+}
+.levels::-webkit-scrollbar {
+    width: 10px;
+}
+.levels::-webkit-scrollbar-track {
+    background: #223242;
+}
+.levels::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border: 2px solid #223242;
+    border-radius: 10px;
+    background: #78909c;
+}
+.levels::-webkit-scrollbar-thumb:window-inactive {
+	background: #223242; 
+}
+
+
+#level1 a {
+    display: table;
+    width: 100%;
+    text-decoration: none;
+    color: #f0f1f1;
+    letter-spacing: 0.02em;
+    margin: 5px 0px;
+}
+#level1 a span {
+    display: table-cell;
+    padding: 10px;
+    text-align: right;
+    background: rgba(30,43,56,0.3);
+    vertical-align: middle;
+}
+#level1 a span.icon {
+    width: 25px;
+    height: 25px;
+}
+#level1 a span.icon01-orange {
+    background: rgba(30,43,56,0.3) url('../img/icon01-25x25-orange.svg') center center no-repeat;
+    background-size: 25px 25px;
+    border-right: 5px solid rgba(255,255,255,0.1);
+}
+#level1 a.selected span {
+    border-right: 5px solid rgba(255,255,255,0);
+    background-size: 32px 32px;
+}
+#level1 a.selected span {
+    padding: 10px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+
+h1 span {
+    display: table-cell;
+    vertical-align: middle;
+}
+h1 span.icon07-grey {
+    width: 40px;
+    height: 40px;
+    background: url('../img/icon07-25x25-gray.svg') 10px center no-repeat;
+    background-size: 40px 40px;
+    padding-right: 20px;
+}
+h1 span.icon08-orange {
+    width: 40px;
+    height: 40px;
+    background: url('../img/icon08-25x25-orange.svg') 10px center no-repeat;
+    background-size: 40px 40px;
+    padding-right: 20px;
+}
+h1 span.icon09-orange {
+    width: 40px;
+    height: 40px;
+    background: url('../img/icon09-25x25-orange.svg') 10px center no-repeat;
+    background-size: 30px 30px;
+    padding-right: 20px;
+}
+h1.witharrow {
+    background: rgba(30,43,56,0.3) url('../img/icon11-25x25-gray.svg') right center no-repeat;
+    background-size: 25px 25px;
+}
+.level2elementholder {
+    display: table;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.level2left {
+    border-right: 5px solid rgba(255,255,255,0.1);
+}
+.level2left, .level2right {
+    padding: 5px;
+    width: 50%;
+    display: table-cell;
+    background: rgba(30,43,56,0.3);
+}
+.level2right a {
+    display: block;
+}
+#level2 .selected {
+    background: rgba(30,43,56,0.3);
+}
+
+#level3 a {
+    display: table;
+    width: 100%;
+    text-decoration: none;
+    color: #f0f1f1;
+    letter-spacing: 0.02em;
+    margin: 5px 0px;
+}
+#level3 a span {
+    display: table-cell;
+    padding: 10px;
+    text-align: right;
+    background: rgba(30,43,56,0.3);
+    vertical-align: middle;
+}
+#level3 a span.icon {
+    width: 25px;
+    height: 25px;
+}
+#level3 a span.icon {
+    border-right: 5px solid #858a8d;
+}
+#level3 a.selected span.icon {
+    border-right: 5px solid rgba(255,255,255,0);
+    border-right: 5px solid #858a8d;
+}
+#level3 a.selected span {
+    padding: 10px;
+    background: rgba(30,43,56,0.6);
+    color: #31a0da;
+}
+
+#level3 a span.icon02 {
+    background: rgba(30,43,56,0.3) url('../img/icon02-25x25-white.svg') center center no-repeat;
+    background-size: 25px 25px;
+}
+#level3 a.selected span.icon02 {
+    background: rgba(30,43,56,0.6) url('../img/icon02-25x25-blue.svg') center center no-repeat;
+    background-size: 25px 25px;
+}
+#level3 a span.icon03 {
+    background: rgba(30,43,56,0.3) url('../img/icon03-25x25-white.svg') center center no-repeat;
+    background-size: 25px 25px;
+}
+#level3 a.selected span.icon03 {
+    background: rgba(30,43,56,0.6) url('../img/icon03-25x25-blue.svg') center center no-repeat;
+    background-size: 25px 25px;
+}
+#level3 a span.icon04 {
+    background: rgba(30,43,56,0.3) url('../img/icon04-25x25-white.svg') center center no-repeat;
+    background-size: 25px 25px;
+}
+#level3 a.selected span.icon04 {
+    background: rgba(30,43,56,0.6) url('../img/icon04-25x25-blue.svg') center center no-repeat;
+    background-size: 25px 25px;
+}
+#level3 a span.icon05 {
+    background: rgba(30,43,56,0.3) url('../img/icon05-25x25-white.svg') center center no-repeat;
+    background-size: 25px 25px;
+}
+#level3 a.selected span.icon05 {
+    background: rgba(30,43,56,0.6) url('../img/icon05-25x25-blue.svg') center center no-repeat;
+    background-size: 25px 25px;
+}
+#level3 a span.icon06 {
+    background: rgba(30,43,56,0.3) url('../img/icon06-25x25-white.svg') center center no-repeat;
+    background-size: 25px 25px;
+}
+#level3 a.selected span.icon06 {
+    background: rgba(30,43,56,0.6) url('../img/icon06-25x25-blue.svg') center center no-repeat;
+    background-size: 25px 25px;
+}
+#level3 a span.icon07 {
+    background: rgba(30,43,56,0.3) url('../img/icon07-25x25-white.svg') center center no-repeat;
+    background-size: 25px 25px;
+}
+#level3 a.selected span.icon07 {
+    background: rgba(30,43,56,0.6) url('../img/icon07-25x25-blue.svg') center center no-repeat;
+    background-size: 25px 25px;
+}
